@@ -1,4 +1,4 @@
-﻿import { getStore } from "@netlify/blobs";
+import { getStore } from "@netlify/blobs";
 import { readFileSync } from "fs";
 import { join } from "path";
 
