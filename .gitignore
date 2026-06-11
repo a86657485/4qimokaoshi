@@ -1,0 +1,8 @@
+﻿node_modules/
+dist/
+*.db
+*.db-shm
+*.db-wal
+server_out.txt
+server_err.txt
+.DS_Store
