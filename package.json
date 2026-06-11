@@ -11,6 +11,7 @@
     "start": "npx tsx server.ts"
   },
   "dependencies": {
+    "@netlify/blobs": "^10.7.9",
     "better-sqlite3": "^11.1.2",
     "cors": "^2.8.5",
     "express": "^4.19.2",
@@ -18,6 +19,8 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.0",
+    "serverless-http": "^4.0.0",
+    "sql.js": "^1.14.1",
     "xlsx": "^0.18.5"
   },
   "devDependencies": {
