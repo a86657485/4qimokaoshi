@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: 4qimokaoshi
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npx tsx server.ts
+    plan: free
+    envVars:
+      - key: PORT
+        value: "3000"
+      - key: DB_PATH
+        value: /var/data/exam.db
+    disk:
+      name: sqlite-data
+      mountPath: /var/data
+      sizeGB: 1

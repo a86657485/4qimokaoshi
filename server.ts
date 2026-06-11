@@ -26,7 +26,8 @@ app.use(cors());
 app.use(express.json({ limit: "1mb" }));
 
 // Database setup
-const db = new Database("exam.db");
+const dbPath = process.env.DB_PATH || "exam.db";
+const db = new Database(dbPath);
 db.pragma("journal_mode = WAL");
 db.pragma("foreign_keys = ON");
 
